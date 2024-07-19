@@ -32,3 +32,13 @@ Este guia fornece instruções para executar o projeto usando Docker e Docker Co
    ```bash
    docker-compose exec app composer install
    ```
+
+4. **Teste a API**
+
+   Após tudo pronto, já podemos testar a API:
+
+   ### URL: http://localhost:8100
+
+   ```bash
+   curl --location 'http://localhost:8100/api/search/local/01001000,17560-246'
+   ```
