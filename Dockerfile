@@ -22,8 +22,14 @@ RUN mkdir -p /home/$user/.composer && \
 
 WORKDIR /var/www
 
+COPY composer.json ./
+
+RUN composer install --no-scripts --no-autoloader
+
 COPY . .
 
 USER $user
 
-RUN composer install --no-scripts --no-autoloader
+EXPOSE 9000
+
+CMD ["php-fpm"]

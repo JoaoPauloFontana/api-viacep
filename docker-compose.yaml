@@ -11,7 +11,7 @@ services:
       args:
         user: user
         uid: 1002
-      context: ./docker/php-fpm-8.2
+      context: .
     image: api-viacep
     restart: unless-stopped
     working_dir: /var/www/
