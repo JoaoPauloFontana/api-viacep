@@ -32,4 +32,3 @@ USER $user
 EXPOSE 9000
 
 CMD ["php-fpm"]
-CMD ["composer", "install"]
