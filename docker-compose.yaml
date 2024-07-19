@@ -5,7 +5,7 @@ networks:
     driver: bridge
 
 services:
-  php-fpm-82:
+  app:
     container_name: "api_viacep"
     build:
       args:
